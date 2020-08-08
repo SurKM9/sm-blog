@@ -30,6 +30,7 @@ const ContactPage = ({ data: { site } }) => {
             name="contact"
             method="post"
             data-netlify="true"
+            onSubmit="submit"
           >
             <div>
               <label htmlFor="w3lName">Name</label>
