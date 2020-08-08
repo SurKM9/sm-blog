@@ -49,11 +49,13 @@ const ContactPage = ({ data: { site } }) => {
               <textarea name="w3lMessage" id="w3lMessage"></textarea>
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
-              <input
+              <button
                 type="submit"
                 className="button -primary"
                 style={{ marginRight: 0 }}
-              />
+              >
+                Submit this form
+              </button>
             </div>
           </form>
         </div>
