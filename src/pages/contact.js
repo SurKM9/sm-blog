@@ -32,21 +32,27 @@ const ContactPage = ({ data: { site } }) => {
             data-netlify="true"
             onSubmit="submit"
           >
+            {/* this is needed to connect netlify and gatsby */}
+            <input type="hidden" name="form-name" value="contact" />
             <div>
-              <label htmlFor="w3lName">Name</label>
-              <input type="text" name="w3lName" id="w3lName" />
+              <label>
+                Your Name: <input type="text" name="name" id="w3lName" />
+              </label>
             </div>
             <div>
-              <label htmlFor="w3lSender">Email</label>
-              <input type="email" name="w3lSender" id="w3lSender" />
+              <label>
+                Your Email: <input type="email" name="email" id="w3lSender" />
+              </label>
             </div>
             <div>
-              <label htmlFor="w3lSubject">Subject</label>
-              <input type="text" name="w3lSubject" id="w3lSubject" />
+              <label>
+                Subject: <input type="text" name="subject" id="w3lSubject" />
+              </label>
             </div>
             <div>
-              <label htmlFor="w3lMessage">Message</label>
-              <textarea name="w3lMessage" id="w3lMessage"></textarea>
+              <label>
+                Message: <textarea name="message" id="w3lMessage"></textarea>
+              </label>
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
               <button
