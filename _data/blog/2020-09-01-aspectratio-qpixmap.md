@@ -302,6 +302,10 @@ We force the `QLabel` to follow fixed dimensions.
 
 Here we have used it on 2 occasions, first when we set an image and second is in `resizeEvent()` of our `QDialog`. Whenever our `QDialog` is resized we resize our `QLabel` based on the formula we derived above. This not only allows us to preserve the aspect ratio of the image but also forces the `QLabel` to follow along.
 
-This whole project can be found on my [GitHub](https://github.com/SurKM9/AspectRatioPixmap) account. Please feel free to share this tutorial, if you feel it helped you.
+This whole project can be found on my [GitHub](https://github.com/SurKM9/AspectRatioPixmap) account.
+
+## Conclusion
+
+Feel free to share this blog, if you feel it helped you. If you have any comments or suggestions, post it in the comments section below.
 
 <span>Photo by <a href="https://unsplash.com/@kuzelevdaniil?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniil Kuželev</a> on <a href="https://unsplash.com/s/photos/eye?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
