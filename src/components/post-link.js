@@ -18,20 +18,20 @@ const PostLink = ({ post }) => (
         </Link>
       </h2>
       <div className="post-meta">{post.frontmatter.date}</div>
-      <img
-        src={"/assets/profile.jpeg"}
-        alt={"profile-icon"}
-        style={{
-          height: 35,
-          width: 35,
-          borderRadius: 100,
-          overflow: "hidden",
-          position: "relative",
-          left: 280,
-          bottom: 25,
-        }}
-      />
     </header>
+    <img
+      src={"/assets/profile.jpeg"}
+      alt={"profile-icon"}
+      style={{
+        height: 35,
+        width: 35,
+        borderRadius: 100,
+        overflow: "hidden",
+        position: "relative",
+        left: 25,
+        bottom: 15,
+      }}
+    />
   </article>
 );
 export default PostLink;
