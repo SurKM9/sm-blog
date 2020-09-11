@@ -3,7 +3,7 @@ template: BlogPost
 path: /aspectratio-qpixmap
 date: 2020-09-06T11:00:31.137Z
 title: Resizing QLabel while maintaining the aspect ratio of QPixmap
-thumbnail: "/assets/eye.jpg"
+thumbnail: "/assets/aspectratio/eye.jpg"
 metaDescription: ""
 ---
 
@@ -35,7 +35,7 @@ Usually, i use this awesome and simple aspect ratio [calculator](https://eikhart
 
 For this tutorial, we will create a `QLabel` and load a `QPixmap` on `QPushButton` clicked. We will use `QDialog` as the container and QtDesigner to setup the UI. This is how our simple UI looks like:
 
-![layout](/assets/layout.png)
+![layout](/assets/aspectratio/layout.png)
 
 We have a button `Swap` and a `QLabel`. I have added a stylesheet to our `QLabel` to make it more obvious. Otherwise, a `QLabel` without its default text is plain transparent. We will load a `QPixmap` whenever the button `Swap` is clicked.
 
