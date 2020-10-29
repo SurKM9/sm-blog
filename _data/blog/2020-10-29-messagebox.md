@@ -93,4 +93,10 @@ Clicking on **Generate** button, creates message boxes in an order.
 
 We can always use convenient static functions API but it lacks a detailed informative text parameter. If the user needs to be alerted about the situation with a descriptive message, we must use property-based API, wherein we can not only convey a detailed informative message to the user but also ask the user what to do about this situation. User input must be subsequently handled there after. 
 
+This whole project can be found on my [GitHub](https://github.com/SurKM9/MessageBox) account.
+
+## Conclusion
+
+Feel free to share this blog, if you feel it helped you. If you have any comments or suggestions, post it in the comments section below.
+
 <span>Photo by <a href="https://unsplash.com/@andrewmeasham?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrew Measham</a> on <a href="https://unsplash.com/s/photos/message?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
