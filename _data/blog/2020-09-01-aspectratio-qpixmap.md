@@ -2,7 +2,7 @@
 template: BlogPost
 path: /aspectratio-qpixmap
 date: 2020-09-06T11:00:31.137Z
-title: Resizing QLabel while maintaining the aspect ratio of QPixmap
+title: Resizing QLabel while maintaining the aspect ratio
 thumbnail: "/assets/aspectratio/eye.jpg"
 metaDescription: ""
 ---
