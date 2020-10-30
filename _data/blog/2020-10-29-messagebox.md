@@ -2,7 +2,7 @@
 template: BlogPost
 path: /message-box
 date: 2020-10-29T23:05:31.137Z
-title: How to use QMessageBox tutorial
+title: QMessageBox tutorial
 thumbnail: "/assets/messagebox/messagebox.jpg"
 metaDescription: ""
 ---
