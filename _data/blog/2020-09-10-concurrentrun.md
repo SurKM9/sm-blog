@@ -91,7 +91,7 @@ void Dialog::onUpdateGUI(int value)
 
 ```
 
-We declare 3 slots `OnStartClicked()`, `OnStartClicked()`, `OnUpdateGUI()` and 1 signal `stop()`.
+We declare 3 slots `OnStartClicked()`, `OnStopClicked()`, `OnUpdateGUI()` and 1 signal `stop()`.
 
 We have a `Worker` class which has a function `asyncFunction()` and this function in our tutorial will run on a different thread.
 
