@@ -108,7 +108,6 @@ On successful return of an instance, we can call the functions available in the 
 
 This sample project can be found on my [GitHub](https://github.com/SurKM9/PluginLoaderApp) page.
 
-
 Feel free to share this blog, if you feel it helped you. If you have any comments or suggestions, post it in the comments section below.
 
 <span>Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/loader?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
