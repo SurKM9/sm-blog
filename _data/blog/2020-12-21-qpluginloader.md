@@ -75,7 +75,7 @@ Device* PluginLoader::load(const QString& path)
         return device;
     }
 
-    qWarning() << "Plugin " << path << "failed to load...";
+    qWarning() << "Plugin " << path << "failed to load..." << m_pluginLoader->errorString();
     return nullptr;
 }
 
@@ -103,6 +103,8 @@ Device* device = new PluginA();
 <br />
 
 On successful return of an instance, we can call the functions available in the plugin on the fly. 
+
+**Note: If the plugin has additional dependencies on other third party libraries, *errorString()* might throw an error as *“Cannot load library: The specified module could not be found”* unless the plugin is in the same folder as in .exe.**
  
 ## Conclusion
 
