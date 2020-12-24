@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Navigation from "../components/navigation";
 import "prismjs/themes/prism-okaidia.css";
+import Socials from "./Socials";
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -26,6 +27,7 @@ export default ({ children }) => {
       {children}
       <footer className="site-footer">
         <p>&copy; {new Date().getFullYear()} ZigZagRainbow</p>
+        <Socials />
       </footer>
     </div>
   );
