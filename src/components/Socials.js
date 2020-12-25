@@ -2,11 +2,11 @@ import React from "react";
 
 export const Socials = () => (
   <div className="iconContainer">
-    <div className="iconRs">
+    {/* <div className="iconRs">
       <a href="https://web.facebook.com/surya.kiran54">
         <i className="fa fa-facebook "></i>
       </a>
-    </div>
+    </div> */}
     <div className="iconRs">
       <a href="https://twitter.com/SurKM9">
         <i className="fa fa-twitter "></i>
