@@ -1,6 +1,14 @@
-<img align="left" alt="ZigZagRainbow's stats" src="https://github-readme-stats.vercel.app/api?username=SurKM9&show_icons=true&hide_border=true&theme=radical" />
+<img align="left" alt="ZigZagRainbow's stats" src="https://github-readme-stats.vercel.app/api?username=SurKM9&show_icons=true&hide_border=true&theme=radical" />  
 
----
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/be675107-0567-40f5-b73b-6cbf7c8a49fb/deploy-status)](https://app.netlify.com/sites/cranky-lumiere-29c41e/deploys)
 
