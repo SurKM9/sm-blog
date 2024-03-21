@@ -4,7 +4,7 @@ date: 2020-10-29T23:05:31.137Z
 draft: false
 
 # post thumb
-image: "//codeflamingo.s3.eu-central-1.amazonaws.com/images/messagebox.jpg"
+image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/messagebox.jpg"
 
 # meta description
 description: "this is meta description"
@@ -89,23 +89,23 @@ void Dialog::on_pushButton_clicked()
 
 Our **Dialog.cpp** contains a single button **Generate** as shown in the image
 
-![](https://codeflamingo.s3.eu-central-1.amazonaws.com/images/window.png)
+![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/window.png)
 
 <br />
 
 Clicking on **Generate** button, creates message boxes in an order.
 
-![](https://codeflamingo.s3.eu-central-1.amazonaws.com/images/information.png)
+![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/information.png)
 
-![](https://codeflamingo.s3.eu-central-1.amazonaws.com/images/critical.png)
+![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/critical.png)
 
-![](https://codeflamingo.s3.eu-central-1.amazonaws.com/images/question.png)
+![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/question.png)
 
-![](https://codeflamingo.s3.eu-central-1.amazonaws.com/images/warning.png)
+![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/warning.png)
 
-![](https://codeflamingo.s3.eu-central-1.amazonaws.com/images/custom.png)
+![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/custom.png)
 
-![](https://codeflamingo.s3.eu-central-1.amazonaws.com/images/highly_custom.png)
+![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/highly_custom.png)
 
 <br />
 

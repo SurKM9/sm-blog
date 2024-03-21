@@ -4,7 +4,7 @@ date: 2020-12-25T18:45:31.137Z
 draft: false
 
 # post thumb
-image: "//codeflamingo.s3.eu-central-1.amazonaws.com/images/error.jpg"
+image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/error.jpg"
 
 # meta description
 description: "this is meta description"

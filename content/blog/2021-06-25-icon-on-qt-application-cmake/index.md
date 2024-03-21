@@ -4,7 +4,7 @@ date: 2021-06-25T23:00:00.226Z
 draft: false
 
 # post thumb
-image: "//codeflamingo.s3.eu-central-1.amazonaws.com/images/icon-app-cmake.jpg"
+image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/cmake-app-logo.jpg"
 
 # meta description
 description: "this is meta description"

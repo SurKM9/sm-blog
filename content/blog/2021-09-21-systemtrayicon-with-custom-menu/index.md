@@ -4,7 +4,7 @@ date: 2021-09-21T12:26:00.226Z
 draft: false
 
 # post thumb
-image: "//codeflamingo.s3.eu-central-1.amazonaws.com/images/sys-tray-logo.jpg"
+image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/systray-logo.jpg"
 
 # meta description
 description: "this is meta description"

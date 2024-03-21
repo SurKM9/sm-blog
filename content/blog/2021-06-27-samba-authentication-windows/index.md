@@ -4,7 +4,7 @@ date: 2021-06-27T12:00:00.226Z
 draft: false
 
 # post thumb
-image: "//codeflamingo.s3.eu-central-1.amazonaws.com/images/samba-logo.jpg"
+image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/samba-logo.jpg"
 
 # meta description
 description: "this is meta description"
