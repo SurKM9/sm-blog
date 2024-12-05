@@ -4,7 +4,7 @@ date: 2021-01-29T19:00:44.226Z
 draft: false
 
 # post thumb
-image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/cmake-qt-logo.png"
+image: "/images/post/cmake-qtcreator-msvc2015/cmake-qt-logo.png"
 
 # meta description
 description: "this is meta description"
@@ -37,13 +37,13 @@ Qt Creator builds debug version even when `CMAKE_BUILD_TYPE` is set to `RELEASE`
 
 I have setup Visual Studio 14 2015 as my default generator for cmake projects in Qt Creator. So, my setup looks something like this:
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/cmakegenerator.png)
+![](/images/post/cmake-qtcreator-msvc2015/cmakegenerator.png)
 
 We can configure our cmake variables the way we like it. Configuration and generation works fine. We encounter an issue when we start building the project in release configuration only to find that Qt Creator builds a debug version of the project.
 
 This is an issue with ms build. To avoid this, we need to explicitly pass a cmake argument to let cmake build a release version. The build configuration for ms build would look like this `/property:Configuration=Release`. This argument can be added to the build steps of release configuration in Qt Creator as shown in the image below:
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/arguments.png)
+![](/images/post/cmake-qtcreator-msvc2015/arguments.png)
 
 This should fix the issue of generating a proper release build for the project using MSVC 2015 generator in Qt Creator.
 

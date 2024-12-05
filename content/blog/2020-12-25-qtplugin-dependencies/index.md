@@ -4,7 +4,7 @@ date: 2020-12-25T18:45:31.137Z
 draft: false
 
 # post thumb
-image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/error.jpg"
+image: "/images/post/qtplugin-dependencies/error.jpg"
 
 # meta description
 description: "this is meta description"

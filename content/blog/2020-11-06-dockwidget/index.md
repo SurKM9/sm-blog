@@ -4,7 +4,7 @@ date: 2020-11-06T21:02:31.137Z
 draft: false
 
 # post thumb
-image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/dockCard.jpg"
+image: "/images/post/dockwidget/dockCard.jpg"
 
 # meta description
 description: "this is meta description"
@@ -34,7 +34,7 @@ QDockWidget acts as secondary utility windows which can be dragged, moved and do
 
 QDockWidget must always be used on a QMainWindow. MainWindow allows areas around the central widget to place secondary windows like QDockWidget.
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/mainwindow-docks.png)
+![](images/post/dockwidget/mainwindow-docks.png)
 
 User can choose to set the dock widget as desired in allowed areas: LeftDockWidgetArea, RightDockWidgetArea, TopDockWidgetArea, BottomDockWidgetArea, AllDockWidgetAreas or NoDockWidgetArea.
 
@@ -76,21 +76,21 @@ In the above code, we set a stylesheet to our dock widget to make it more visibl
 
 On start, our mainwindow looks something like this:
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/topArea.png)
+![](/images/post/dockwidget/topArea.png)
 
 QDockWidget comes with a horizontal titlebar by default. Notice the green bar with an undock and a close button. The **Show** button is connect to the slot **on_pushButton_clicked()** which generates a QLabel. QLabel is set inside dock widget using **setWidget(QWidget\* widget)**. QLabel also contains a reference image which looks like this:
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/topArea.png)
+![](images/post/dockwidget/topArea.png)
 
 Double clicking on the title bar undocks the QDockWidget and can be freely dragged using mouse to a new position around QMainWindow. Here we can see how the QDockWidget is positioned at different allowed positions.
 
-![Floating](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/floatingArea.png)
+![Floating](/images/post/dockwidget/floatingArea.png)
 
-![Bottom Area](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/bottomArea.png)
+![Bottom Area](/images/post/dockwidget/bottomArea.png)
 
-![Left Area](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/leftArea.png)
+![Left Area](/images/post/dockwidget/leftArea.png)
 
-![Right Area](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/rightArea.png)
+![Right Area](/images/post/dockwidget/rightArea.png)
 
 ## Conclusion
 

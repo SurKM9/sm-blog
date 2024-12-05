@@ -4,7 +4,7 @@ date: 2021-09-21T12:26:00.226Z
 draft: false
 
 # post thumb
-image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/systray-logo.jpg"
+image: "/images/post/systemtrayicon-with-custom-menu/systray-logo.jpg"
 
 # meta description
 description: "this is meta description"
@@ -37,22 +37,21 @@ Before we use the *QSystemTray* class we need to make sure we have a *.ico* file
 With a couple of lines of code as shown below, we can create a tray icon with a custom menu for our application ready.
 
 ```
+// create system tray icon
+// assuming you have added .ico file to your resource .rc file
+// otherwise, provide a relative path to it
+QSystemTrayIcon* trayIcon = new QSystemTrayIcon(QIcon(":/path/to/your/.ico file"), this);
 
-    // create system tray icon
-    // assuming you have added .ico file to your resource .rc file
-    // otherwise, provide a relative path to it
-    QSystemTrayIcon* trayIcon = new QSystemTrayIcon(QIcon(":/path/to/your/.ico file"), this);
+// add tray icon menu actions
+QMenu* trayMenu = new QMenu(this);
+trayMenu->addAction("Show");
+trayMenu->addAction("Exit");
 
-    // add tray icon menu actions
-    QMenu* trayMenu = new QMenu(this);
-    trayMenu->addAction("Show");
-    trayMenu->addAction("Exit");
+// set menu on the system tray icon
+trayIcon->setContextMenu(trayMenu);
 
-    // set menu on the system tray icon
-    trayIcon->setContextMenu(trayMenu);
-
-    // show tray icon
-    m_systemTrayIcon->show();
+// show tray icon
+m_systemTrayIcon->show();
 
 ```
 ## Conclusion

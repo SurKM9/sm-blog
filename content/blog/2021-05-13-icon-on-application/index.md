@@ -4,7 +4,7 @@ date: 2021-05-13T10:00:44.226Z
 draft: false
 
 # post thumb
-image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/app-icon-logo.jpg"
+image: "/images/post/icon-on-application/app-icon-logo.jpg"
 
 # meta description
 description: "this is meta description"

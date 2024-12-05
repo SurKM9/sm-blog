@@ -4,7 +4,7 @@ date: 2020-10-29T23:05:31.137Z
 draft: false
 
 # post thumb
-image: "//codeflaming-bucket.s3.eu-central-1.amazonaws.com/messagebox.jpg"
+image: "/images/post/messagebox/messagebox.jpg"
 
 # meta description
 description: "this is meta description"
@@ -41,7 +41,6 @@ Static functions API is built-in easy to use approach. Whereas, property-based A
 In this example, we'll use QMessageBox in 2 different ways as discussed above.
 
 ```
-
 #include "dialog.h"
 #include "ui_dialog.h"
 #include <QMessageBox>
@@ -89,23 +88,23 @@ void Dialog::on_pushButton_clicked()
 
 Our **Dialog.cpp** contains a single button **Generate** as shown in the image
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/window.png)
+![](/images/post/messagebox/window.png)
 
 <br />
 
 Clicking on **Generate** button, creates message boxes in an order.
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/information.png)
+![](/images/post/messagebox/information.png)
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/critical.png)
+![](/images/post/messagebox/critical.png)
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/question.png)
+![](/images/post/messagebox/question.png)
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/warning.png)
+![](/images/post/messagebox/warning.png)
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/custom.png)
+![](/images/post/messagebox/custom.png)
 
-![](https://codeflaming-bucket.s3.eu-central-1.amazonaws.com/highly_custom.png)
+![](/images/post/messagebox/highly_custom.png)
 
 <br />
 
