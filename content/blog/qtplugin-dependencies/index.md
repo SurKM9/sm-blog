@@ -26,7 +26,7 @@ Solution to cannot load library error.
 
 ## Introduction
 
-In [QPluginLoader](/qpluginloader) tutorial we learnt how to load plugins using Qt. This only works when the plugin has no dependencies to other third party plugins like OpenCV, Boost and proprietary plugins. Although, loading plugins which has other third party dependencies is not straight forward.
+In [QPluginLoader](/blog/qpluginloader) tutorial we learnt how to load plugins using Qt. This only works when the plugin has no dependencies to other third party plugins like OpenCV, Boost and proprietary plugins. Although, loading plugins which has other third party dependencies is not straight forward.
 
 ## The Problem
 

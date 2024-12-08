@@ -26,7 +26,7 @@ Let's learn to use QPluginLoader class to load custom plugins.
 
 ## Introduction
 
-In our [part I]({{< ref "/blog/2020-12-19-qtplugin/index" >}}) of this tutorial we learnt how to create a qt plugin using Qt low level API to extend our application. In this tutorial, we will learn how to load/use the plugin we created using [QPluginLoader](https://doc.qt.io/qt-5/qpluginloader.html) class.
+In our [part I](/blog/qtplugin) of this tutorial we learnt how to create a qt plugin using Qt low level API to extend our application. In this tutorial, we will learn how to load/use the plugin we created using [QPluginLoader](https://doc.qt.io/qt-5/qpluginloader.html) class.
 
 Qt docs also states that *"QPluginLoader cannot be used if your application is statically linked against Qt. In this case, you will also have to link to plugins statically. You can use QLibrary if you need to load dynamic libraries in a statically linked application."*
 
@@ -111,7 +111,7 @@ Device* device = dynamic_cast<Device*>(m_pluginLoader->instance());
 ```
 <br />
 
-would evaluate to look something like this (check [part I]({{< ref "/blog/2020-12-19-qtplugin/index" >}}) for PluginA):
+would evaluate to look something like this (check [part I](/blog/qtplugin) for PluginA):
 
 ```
 Device* device = new PluginA();
