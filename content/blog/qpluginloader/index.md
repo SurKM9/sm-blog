@@ -41,10 +41,8 @@ In this short tutorial, we will learn how to load/use a Qt plugin using QPluginL
 
 ```
 // plugin_loader
-
 #include <QObject>
 #include <QPluginLoader>
-
 #include "interfaces/Device.h"
 
 class PluginLoader : public QObject
@@ -61,8 +59,9 @@ class PluginLoader : public QObject
 
         QPluginLoader* m_pluginLoader;
 };
-
 ``` 
+
+
 <br />
 
 We create a **PluginLoader** class as a wrapper to load our plugins. Our implementation looks like this:
