@@ -1,7 +1,7 @@
 ---
 title: "Why Should C++ Developers Learn Rust in 2026?"
 date: 2026-02-25T22:38:28.002Z
-draft: true
+draft: false
 
 # post thumb
 image: "/blog/c-plus-plus-developers-learn-rust-2026/logo.jpg"

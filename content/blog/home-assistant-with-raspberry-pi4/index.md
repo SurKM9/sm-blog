@@ -1,7 +1,7 @@
 ---
 title: "Intro to Home Assistant with Raspberry Pi 4"
 date: 2024-12-08T11:47:00.226Z
-draft: true
+draft: false
 
 # post thumb
 image: "/images/post/home-assistant-with-raspberry-pi4/logo.jpg"
