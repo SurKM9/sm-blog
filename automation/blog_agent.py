@@ -14,8 +14,17 @@ load_dotenv()
 UNSPLASH_ACCESS_KEY = os.getenv("UNSPLASH_ACCESS_KEY")
 
 # --- PATH & SECURITY CONFIG ---
-BASE_DIR = Path(__file__).parent.parent.resolve()
-BLOG_DIR = BASE_DIR / "content" / "blog"
+# Define the script's home
+SCRIPT_DIR = Path(__file__).parent.resolve()
+
+# Define the root project directory (one level up from automation)
+BASE_DIR = SCRIPT_DIR.parent
+
+# Define where the drafts go
+BLOG_DIR = SCRIPT_DIR / "ai_drafts"
+
+# Ensure the draft folder exists
+BLOG_DIR.mkdir(exist_ok=True)
 
 # --- HELPER FUNCTIONS ---
 def create_slug(text):
