@@ -39,7 +39,7 @@ As we have used Qt's low level API to create our plugin, we have an option to us
 
 In this short tutorial, we will learn how to load/use a Qt plugin using QPluginLoader class.
 
-```
+```cpp
 // plugin_loader
 #include <QObject>
 #include <QPluginLoader>
@@ -66,8 +66,7 @@ class PluginLoader : public QObject
 
 We create a **PluginLoader** class as a wrapper to load our plugins. Our implementation looks like this:
 
-```
-
+```cpp
 #include <QDebug>
 #include "pluginloader.h"
 
@@ -105,7 +104,7 @@ Qt docs also states that
 
 Before loading, we check to see if **m_pluginLoader** is already loaded. If not, we try to load the plugin using **load()** and the get the instance of the plugin. In our case: 
 
-```
+```cpp
 Device* device = dynamic_cast<Device*>(m_pluginLoader->instance());
 ```
 <br />

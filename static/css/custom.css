@@ -1,0 +1,28 @@
+/* 1. Paint the outer wrapper dark and set the default text to off-white */
+.content pre {
+    background-color: #282a36 !important; 
+    color: #f8f8f2 !important; 
+    padding: 20px !important;
+    border-radius: 8px !important;
+    border: none !important;
+    overflow-x: auto !important;
+    margin-bottom: 24px !important;
+}
+
+.content pre code {
+    background-color: transparent !important;
+    color: inherit !important; 
+    font-size: 14px !important;
+    border: none !important;
+}
+
+/* 2. CRUSH THE GAPS: Strip only the vertical spacing, leave horizontal alone! */
+.content pre, 
+.content pre code, 
+.content pre span {
+    line-height: 1.4 !important; 
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

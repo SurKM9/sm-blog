@@ -40,7 +40,7 @@ Static functions API is built-in easy to use approach. Whereas, property-based A
 
 In this example, we'll use QMessageBox in 2 different ways as discussed above.
 
-```
+```cpp
 #include "dialog.h"
 #include "ui_dialog.h"
 #include <QMessageBox>

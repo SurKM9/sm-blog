@@ -92,7 +92,7 @@ To verify that PyTorch is working correctly, run the following in the Miniforge 
 
 Then, in the Python interpreter, execute:
 
-```
+```python
 import torch
 
 x = torch.rand(5,3)
@@ -100,7 +100,7 @@ print(x)
 ```
 You should see an output similar to:
 
-```
+```python
 tensor([[0.2024, 0.3091, 0.9639],
         [0.3450, 0.1904, 0.8550],
         [0.6629, 0.4928, 0.6141],
@@ -112,7 +112,7 @@ tensor([[0.2024, 0.3091, 0.9639],
 
 To ensure PyTorch can utilize your GPU, check for CUDA availability:
 
-```
+```python
 import torch
 torch.cuda.is_available()
 ```

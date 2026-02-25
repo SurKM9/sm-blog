@@ -40,9 +40,8 @@ Lets have a look at an instance, where, we have different cameras which depend o
 
 In this short tutorial, we will learn how to create a Qt plugin interface and implement the interface to create a plugin.
 
-```
+```cpp
 // plugin_interface
-
 #include <QString>
 #include <QStringList>
 #include <QtPlugin>
@@ -68,7 +67,7 @@ This allows Qt to assign this as an interface class with an unique ID.
 
 Now, we have an interface that needs to be implemented to create necessary plugins. This is how we implement plugins using the above interface:
 
-```
+```cpp
 // pluginA class implemented using Device class
 #include <QObject>
 #include "Device.h"
@@ -95,7 +94,7 @@ class PluginA : public QObject, public Device
 
 In order to be considered as [QtPlugin](https://doc.qt.io/qt-5/qtplugin.html), we need to define macros **Q_PLUGIN _METADATA** and **Q_INTERFACES**. [Q_PLUGIN _METADATA](https://doc.qt.io/qt-5/qtplugin.html#Q_PLUGIN_METADATA) macro also takes in an optional parameter as json file with plugin metadata which looks something like this:
 
-```
+```json
 {
     "id" :            "com.company.PluginA",
     "name" :          "pluginA",

@@ -1,10 +1,10 @@
 ---
-title: "Samba authentication in Qt app using Windows API"
-date: 2021-06-27T12:00:00.226Z
-draft: false
+title: "Intro to Home Assistant with Raspberry Pi 4"
+date: 2024-12-08T11:47:00.226Z
+draft: true
 
 # post thumb
-image: "/images/post/samba-authentication-windows/samba-logo.jpg"
+image: "/images/post/home-assistant-with-raspberry-pi4/logo.jpg"
 
 # meta description
 description: "this is meta description"
@@ -12,36 +12,53 @@ description: "this is meta description"
 # taxonomies
 categories:
   - Tech
-  - Programming
 tags:
-  - cplusplus
-  - cmake
+  - raspberrypi
+  - homeautomation
 
 # post type
 type: "post"
 ---
 
-Authenticate samba server using Windows API
+Installation of Home Assistant on Raspberry Pi 4
 <!--more-->
 
 ## Introduction
 
-Samba is an open-source service that runs on Linux/Unix based platforms while having the capability to communicate with Windows OS clients. Samba server offers services like:
-
- * Sharing of directories
- * Sharing printers
- * Windows clients authentication
- * Name-server resolution and so on
+[Home Assistant](https://www.home-assistant.io/) is an open-source home automation service that enables local control with security. It is managed and maintained by worldwide developers community. Since the launch home assistant has come a long way with support for more than 2900+ integrations available at the time of writing. It has a robust documentation and community support which makes it an ideal home automation choice for those who would like to move away from cloud based automation or the hobbyists who would like to play around with the advanced controls home assistant provides.
 
 </br>
 
-In this tutorial, we will discuss about how to implement communication between Qt application and samba server using authentication. We do not go into the depth of setting up or configuring samba servers as it will be beyond the scope of our discussion.
+In this tutorial, we will discuss about how to install home assistant OS on Raspberry Pi 4 and what are the challenges in installation.
 
-## Problem
+## Pre-requisites
 
-A samba server without authentication is open to communicate with as many clients as possible if set up correctly. But communicating with a samba server with authentication can be challenging. Qt doesn't have native support to mount network resources and deal with file protocols. So, we will use Windows APIs to get around the authentication issue. Of course, this would violate Qt's cross-platform ability but this would be useful for anyone developing applications only for Windows platforms.
+* Raspberry Pi 4 Model B
+* Good Micro SD card (at least 32 GB)
+* SD card reader (for flashing the SD card with home assistant OS)
+* Good internet connection (preferrably access to LAN connection for Raspberry Pi 4)
+* PC/Laptop for writing/flashing SD card
 
-## Setup and Configuration
+</br>
+
+## Challenges
+
+Here I would like to mention the mistakes I made:
+
+**Cheap 10€ micro SD card:**
+
+In order to save some money (because it was a hobby project for me) I picked up a cheap micro SD card from the store. You guessed it right. While trying to write/flash the micro SD card, for some reason I managed to corrupt it. Rendering it useless. 
+Even though micro SD is not recommended (SSD is preferred) I would suggest a good micro SD card from a reputed brand.
+
+**Faulty SD card readers:**
+
+Please make sure to use a good SD card reader for writing/flashing the cards. After the cheap SD card disaster, I realized I must check my SD card readers for their functionality. Guess what, my SD card reader was also faulty. I managed to buy a new one before I tried to flash my new SanDisk SD card. 
+
+**Word of Caution:**
+
+If you are planning to use your old SD card lying around somewhere in your drawers, flashing will **OVERWRITE/WIPE YOUR DATA** on the card. Make sure you have your data backed up.
+
+## Setup and Installation
 
 We will need the WNetAddConnection2A function from the Windows API to make the connection to a network resource as in our case samba server.
 
@@ -74,7 +91,7 @@ After setting up our *NETRESOURCE* we need to call *WNetAddConnection2A* functio
 
 *WNetAddConnection2A* returns with an error code which can be handled as you wish. Below is a sample function showing the creation of *NETRESOURCE* and add a new connection using *WNetAddConnection2A*.
 
- ```cpp
+ ```c++
 #include <windows.h>
 #include <Winnetwk.h>
 #include <system_error>

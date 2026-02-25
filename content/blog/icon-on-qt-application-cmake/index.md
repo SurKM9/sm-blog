@@ -32,7 +32,7 @@ In the previous [tutorial](icon-qtapplication) we managed to simply set the appl
 
 Before we can start writing CMake scripts we need to create a resource(.rc file). To create a .rc file, right-click in your current source directory where the CMakeLists.txt exists and choose a new document. Rename the new document to "appicon.rc". Open the .rc file in an editor and paste this line in it:
 
-```
+```cmake
 IDI_ICON1 ICON DISCARDABLE "appicon.ico"
 ```
 
@@ -40,7 +40,7 @@ Make sure **appicon.ico** exists in the current source directory as well. If you
 
 Now, we just need to add this .rc file in our CMake script like:
 
-```
+```cmake
 set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/appicon.rc")
 
 add_executable(${PROJECT_NAME}

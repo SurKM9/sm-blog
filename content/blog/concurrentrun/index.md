@@ -50,7 +50,7 @@ In the layout we have a `QLCDNumber` and `QProgressBar` as a reference to see ho
 
 Lets have look at our **Dialog.cpp**:
 
-``` 
+```cpp
 #include <QtConcurrent/QtConcurrent>
 #include <QFuture>
 
@@ -114,7 +114,7 @@ We have a `Worker` class which has a function `asyncFunction()` and this functio
 
 Implementation looks like this:
 
-```
+```cpp
 #include <QThread>
 #include "worker.h"
 
@@ -159,7 +159,7 @@ void Worker::asyncFunction()
 
 To make this work, we need proper connections like the ones we have defined in **Dialog.cpp**.
 
-```
+```cpp
 connect(m_worker, &Worker::updateGUI, this, &Dialog::onUpdateGUI);
 connect(this, &Dialog::stop, m_worker, &Worker::stop);
 ```
@@ -168,7 +168,7 @@ First connection ensures that every time the worker class emits a signal `update
 
 By default, a connect statement in Qt looks something like this:
 
-```
+```cpp
 QObject::connect(const QObject *sender, const char *signal, const char *method, Qt::ConnectionType type = Qt::AutoConnection)
 ```
 
@@ -180,7 +180,7 @@ Point of interest here is `QtConcurrent::run()`. It spawns a thread every time `
 
 To test it, we print the thread id:
 
-```
+```text
 Main thread:  0x4d48
 Worker thread:  0x39cc
 

@@ -36,7 +36,7 @@ Before we use the *QSystemTray* class we need to make sure we have a *.ico* file
 
 With a couple of lines of code as shown below, we can create a tray icon with a custom menu for our application ready.
 
-```
+```cpp
 // create system tray icon
 // assuming you have added .ico file to your resource .rc file
 // otherwise, provide a relative path to it

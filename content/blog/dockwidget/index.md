@@ -42,7 +42,7 @@ User can choose to set the dock widget as desired in allowed areas: LeftDockWidg
 
 In this example, we will see how to set a widget inside a dock widget and move the dock widget to all allowed areas using mouse.
 
-```
+```c++
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 

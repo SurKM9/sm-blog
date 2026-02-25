@@ -22,6 +22,8 @@ URL = "plugins/slick/slick.css"
 URL = "plugins/themify-icons/themify-icons.css"
 [[params.plugins.css]]
 URL = "plugins/venobox/venobox.css"
+[[params.plugins.css]]
+URL = "css/custom.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -91,6 +93,7 @@ email = "suryakiranmaruvada09@gmail.com"
 location = "Munich, Germany"
 # copyright
 copyright = "| copyright &copy; 2023 Suryakiran Maruvada All Rights Reserved |"
+custom_css = ["css/custom.css"]
 
 # Preloader
 [params.preloader]
@@ -139,3 +142,12 @@ link = "https://github.com/SurKM9"
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
 link = "https://www.linkedin.com/in/suryakiran-maruvada-97622941/"
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = false   # <--- THIS IS THE MAGIC BULLET
+    noClasses = true

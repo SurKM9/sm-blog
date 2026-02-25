@@ -60,8 +60,7 @@ Lets dig into code.
 
 Our **main.cpp** doesn't look any special. Plain file created by QtCreator for us.
 
-```
-
+```cpp
 #include "Dialog.h"
 #include <QApplication>
 
@@ -79,7 +78,7 @@ To achieve our objective, we need to subclass `QLabel` and we call it **PixmapLa
 
 Lets see our **PixmapLabel.h**
 
-```
+```cpp
 #ifndef PIXMAPLABEL_H
 #define PIXMAPLABEL_H
 
@@ -115,8 +114,7 @@ Here we are going to re-implement 3 functions `sizeHint()`, `heightForWidth()` a
 
 Here is the implementation file **PixmapLabel.cpp**:
 
-```
-
+```cpp
 #include "PixmapLabel.h"
 #include <QPainter>
 #include <QPaintEvent>
@@ -210,7 +208,7 @@ To fix our second issue, we need to manage the `width()` and `height()` of the `
 
 Lets have a look at our **Dialog.h**
 
-```
+```cpp
 #ifndef DIALOG_H
 #define DIALOG_H
 
@@ -253,7 +251,7 @@ class Dialog : public QDialog
 
 Here is our implementation **Dialog.cpp**
 
-```
+```cpp
 #include "Dialog.h"
 #include "ui_Dialog.h"
 

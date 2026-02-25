@@ -55,8 +55,7 @@ When loading a plugin using QPluginLoader **load()** as described in [part II](/
 
  With reference to our [part II](/qpluginloader) tutorial, our new code looks like this:
 
- ```
-
+ ```cpp
 #include <QDebug>
 #include <QtGlobal>
 #include "pluginloader.h"

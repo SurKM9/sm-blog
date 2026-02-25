@@ -37,7 +37,7 @@ Our goal would be to design a simple UI with buttons which enable us to achieve 
 
 Adding widgets to `QGridLayout` is very easy using the `addWidget()` which can be used further to specify row or column spans also. In our example, we add 4 `QLabel`s to the layout when button `Add` is clicked.
 
-```
+```c++
 void MainWindow::on_pushButton_clicked()
 {
     // check if the grid layout is empty
@@ -71,7 +71,7 @@ void MainWindow::on_pushButton_clicked()
 
 Removing widgets from grid layout can be little tricky. In our tutorial, we perform removing widgets using button `Remove`. We use convenient function `removeWidget()` from Qt for the purpose. First, we get the item at index 0 in the grid using `itemAt(0)` then after we can remove it from the layout using `removeItem()`. Keep in mind this will only remove the item from the layout but it is the callers responsibility to delete in explicitly. To delete the widget itself, we need to call `widget()` on `QLayoutItem` returned by `itemAt(0)`. As it might be possible the widget at index 0 can be a nullptr, we add a check to see if its a valid widget and go on to delete the widget.
 
-```
+```c++
 void MainWindow::on_pushButton_2_clicked()
 {
     // get the item in the layout at index 0

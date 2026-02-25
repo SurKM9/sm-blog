@@ -1,2 +1,7 @@
 .hugo_build.lock
 public
+content/blog/ai_drafts/*
+ai-worker-blog/
+__pycache__/
+*.pyc
+automation/.env
