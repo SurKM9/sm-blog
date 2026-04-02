@@ -1,6 +1,6 @@
 .hugo_build.lock
 public
-content/blog/ai_drafts/*
+automation/ai_drafts/*
 ai-worker-blog/
 __pycache__/
 *.pyc

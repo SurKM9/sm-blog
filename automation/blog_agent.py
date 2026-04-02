@@ -191,18 +191,18 @@ type: "post"
     # 4. Architect / Outliner (DeepSeek-R1)
     print("\n🧠 [Step 2/4] DeepSeek is structuring the technical outline...")
     thinker = OllamaLLM(
-        model="deepseek-r1:7b", base_url="[http://127.0.0.1:11434](http://127.0.0.1:11434)", keep_alive="1h"
+        model="deepseek-r1:7b", base_url="[http://127.0.0.1:11434](http://127.0.0.1:11434)", keep_alive="0"
     )
     outline = thinker.invoke(
         f"Analyze these search results: {search_data}. "
         f"Create a deep technical outline for a blog post about '{topic}' "
-        f"for codeflaming.eu. Focus on advanced concepts for developers."
+        f"for codeflamingo.eu. Focus on advanced concepts for developers."
     )
 
     # 5. Writer / Coder (Qwen)
     print("\n✍️  [Step 3/4] Qwen is drafting the final Markdown content...")
     writer = OllamaLLM(
-        model="qwen2.5-coder:7b", base_url="[http://127.0.0.1:11434](http://127.0.0.1:11434)", keep_alive="10m"
+        model="qwen2.5-coder:7b", base_url="[http://127.0.0.1:11434](http://127.0.0.1:11434)", keep_alive="0"
     )
     
     # Notice the CRITICAL INSTRUCTIONS block added to force compliance
@@ -229,6 +229,6 @@ CRITICAL INSTRUCTIONS:
     print(f"📦 Bundle created at: {bundle_path.relative_to(BASE_DIR)}")
 
 if __name__ == "__main__":
-    print("--- CodeFlaming Blog Agent Initialized ---")
+    print("--- CodeFlamingo Blog Agent Initialized ---")
     target_topic = input("Enter topic: ")
     generate_blog(target_topic)
