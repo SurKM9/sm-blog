@@ -4,7 +4,6 @@ date: 2021-06-27T12:00:00.226Z
 draft: false
 
 # post thumb
-image: "/images/post/samba-authentication-windows/samba-logo.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - cmake
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Authenticate samba server using Windows API
 <!--more-->

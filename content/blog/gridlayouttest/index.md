@@ -4,7 +4,6 @@ date: 2021-01-09T19:00:44.226Z
 draft: false
 
 # post thumb
-image: "/images/post/gridlayouttest/grid.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 Imagine we want to add multiple widgets in QGridLayout dynamically but also remove widgets on the fly.
 <!--more-->
 
@@ -31,7 +32,7 @@ Imagine we want to add multiple widgets in `QGridLayout` dynamically but also re
 
 Our goal would be to design a simple UI with buttons which enable us to achieve adding and removing widgets on a grid layout dynamically. Our application would ultimately look like this:
 
-![window](/images/post/gridlayouttest/window.gif)
+![window](window.gif)
 
 ## Adding widgets to layout
 

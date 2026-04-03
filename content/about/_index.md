@@ -1,16 +1,14 @@
 ---
 title: "About Me"
-date: 2019-10-29T13:49:23+06:00
-draft: false
-
-# image
-image: "//codeflamingo.s3.eu-central-1.amazonaws.com/images/surya-small.jpg"
-
-# meta description
-description: "this is meta description"
-
-# type
-type : "about"
+layout: "profile"
+# Set 'showTaxonomies' to false if you want a clean look without tags
+showTaxonomies: false
 ---
 
-I like blogging about various C++/Qt technologies and other stuff related to OpenCV, Machine Learning, Tensorflow etc. This blog expresses my views of various technologies and scenarios I have come across in realtime.
+Senior Software Engineer specializing in the intersection of AI, Embedded Systems, and scalable architecture.  
+Crafting robust digital ecosystems where precision logic meets elegant, high-performance execution.
+
+---
+
+### The Mission
+Building at the edge of what's possible on a ThinkPad...

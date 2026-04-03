@@ -4,7 +4,6 @@ date: 2021-01-31
 draft: false
 
 # post thumb
-image: "/images/post/aspectratio-qpixmap/eye.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
     - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Let's talk about aspect ratio handling in QLabel.
 
@@ -52,7 +53,7 @@ Usually, i use this awesome and simple aspect ratio [calculator](https://eikhart
 
 For this tutorial, we will create a `QLabel` and load a `QPixmap` on `QPushButton` clicked. We will use `QDialog` as the container and QtDesigner to setup the UI. This is how our simple UI looks like:
 
-![layout](/images/post/aspectratio-qpixmap/layout.png)
+![layout](layout.png)
 
 We have a button `Swap` and a `QLabel`. I have added a stylesheet to our `QLabel` to make it more obvious. Otherwise, a `QLabel` without its default text is plain transparent. We will load a `QPixmap` whenever the button `Swap` is clicked.
 

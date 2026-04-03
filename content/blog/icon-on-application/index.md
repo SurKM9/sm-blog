@@ -4,7 +4,6 @@ date: 2021-05-13T10:00:44.226Z
 draft: false
 
 # post thumb
-image: "/images/post/icon-on-application/app-icon-logo.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Set icon on Qt application window and on executable
 <!--more-->

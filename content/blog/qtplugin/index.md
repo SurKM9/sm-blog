@@ -4,7 +4,6 @@ date: 2020-12-19T10:45:31.137Z
 draft: false
 
 # post thumb
-image: "/images/post/qtplugin/plugin.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Let's learn how to create a custom qt plugin.
 <!--more-->

@@ -1,25 +1,14 @@
 ---
 title: "Yocto vs BuildRoot: A Deep Dive into Advanced Embedded Linux Development Tools"
 date: 2026-04-02T10:03:56.696Z
-draft: false
-
-# post thumb
-image: "/blog/yocto-buildroot-comparison/logo.jpg"
-
-# meta description
 description: "Explore the strengths and weaknesses of Yocto and BuildRoot, two powerful tools for building custom embedded Linux systems."
-
-# taxonomies
-categories:
-- Tech
-tags:
-- Embedded Linux
-- Yocto Project
-- Buildroot
-
-# post type
-type: "post"
+draft: false
+# Blowfish specific layout and image keys:
+showAuthor: true
+showReadingTime: true
+showFeatureImage: true
 ---
+
 
 ### Introduction
 Developing custom embedded Linux systems poses unique challenges, from managing hardware configurations to optimizing software performance. Two leading tools in this domain are the Yocto Project and Buildroot. Both offer robust solutions for building tailored Linux images suited to various project needs. However, choosing the right tool is crucial, as each has its strengths and weaknesses that align better with different development environments and requirements.

@@ -4,7 +4,6 @@ date: 2021-09-21T12:26:00.226Z
 draft: false
 
 # post thumb
-image: "/images/post/systemtrayicon-with-custom-menu/systray-logo.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Set custom system tray icon with custom context menu for your application
 <!--more-->

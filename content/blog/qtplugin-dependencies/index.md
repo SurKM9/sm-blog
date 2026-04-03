@@ -4,7 +4,6 @@ date: 2020-12-25T18:45:31.137Z
 draft: false
 
 # post thumb
-image: "/images/post/qtplugin-dependencies/error.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Solution to cannot load library error.
 <!--more-->

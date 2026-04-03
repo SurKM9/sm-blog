@@ -4,7 +4,6 @@ date: 2020-12-21T11:25:31.137Z
 draft: false
 
 # post thumb
-image: "/images/post/qpluginloader/qpluginloader.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Let's learn to use QPluginLoader class to load custom plugins.
 <!--more-->

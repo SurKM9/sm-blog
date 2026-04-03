@@ -4,7 +4,6 @@ date: 2024-12-26T22:43:24+01:00
 draft: false
 
 # post thumb
-image: "/images/post/pytorch-installation-windows/logo.jpg"
 
 # meta description
 description: "this is meta description"
@@ -17,8 +16,10 @@ tags:
   - pytorch
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Installation of Pytorch using Miniforge3 on Windows 11
 <!--more-->

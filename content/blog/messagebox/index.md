@@ -4,7 +4,6 @@ date: 2020-10-29T23:05:31.137Z
 draft: false
 
 # post thumb
-image: "/images/post/messagebox/messagebox.jpg"
 
 # meta description
 description: "this is meta description"
@@ -18,8 +17,10 @@ tags:
   - qt
 
 # post type
-type: "post"
+showFeatureImage: true
+showAuthor: true
 ---
+
 
 Messagebox tutorial.
 <!--more-->
@@ -88,23 +89,23 @@ void Dialog::on_pushButton_clicked()
 
 Our **Dialog.cpp** contains a single button **Generate** as shown in the image
 
-![](/images/post/messagebox/window.png)
+![](window.png)
 
 <br />
 
 Clicking on **Generate** button, creates message boxes in an order.
 
-![](/images/post/messagebox/information.png)
+![](information.png)
 
-![](/images/post/messagebox/critical.png)
+![](critical.png)
 
-![](/images/post/messagebox/question.png)
+![](question.png)
 
-![](/images/post/messagebox/warning.png)
+![](warning.png)
 
-![](/images/post/messagebox/custom.png)
+![](custom.png)
 
-![](/images/post/messagebox/highly_custom.png)
+![](highly_custom.png)
 
 <br />
 
