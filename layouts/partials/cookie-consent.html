@@ -66,8 +66,8 @@
         }
     });
 
-    function loadGA() {
-        // Replace G-XXXXXXXXXX with your actual ID
+    function loadGA() {        
+        // google analytics key is set in hugo.toml under [services.googleAnalytics]
         const id = '{{ .Site.Config.Services.GoogleAnalytics.ID }}';
         const script = document.createElement('script');
         script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
