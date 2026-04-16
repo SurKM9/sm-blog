@@ -29,7 +29,7 @@ enableEmoji = true
     id = "G-MZ2RZE93ZM"
 
 [pagination]
-  pagerSize = 100
+  pagerSize = 10
 
 [imaging]
   anchor = 'Center'
