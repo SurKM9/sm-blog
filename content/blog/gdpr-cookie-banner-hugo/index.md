@@ -1,7 +1,7 @@
 ---
 title: "Enhance Your Hugo Website with GDPR Compliance: Adding a Cookie Consent Banner Using Partials"
 date: 2026-04-05T09:24:00+02:00
-draft: true
+draft: false
 description: "Boost your website's GDPR compliance by integrating a user-friendly cookie consent banner seamlessly into your Hugo site using partials. This guide will walk you through a straightforward process to ensure your website complies with data protection regulations while providing an enhanced user experience."
 summary: "Learn how to create a modular, efficient cookie consent banner that informs users about cookie usage and allows them to easily manage their preferences, all within the flexible framework of Hugo's templating system."
 featureAsset: "background.png" # Default flamingo background
