@@ -21,3 +21,6 @@ Thumbs.db
 
 # --- Project Specific ---
 /ai-worker-blog/
+
+# --- Claude Code ---
+CLAUDE.md
