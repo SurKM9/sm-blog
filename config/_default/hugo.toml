@@ -33,6 +33,7 @@ enableEmoji = true
 
 [imaging]
   anchor = 'Center'
+  quality = 85
 
 [taxonomies]
   tag = "tags"
