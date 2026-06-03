@@ -175,22 +175,19 @@ def get_stock_photo_url(visual_keyword):
         return None, None, None
 
     def fetch_image(query_string):
-        url = "https://api.unsplash.com/search/photos"
+        url = "https://api.unsplash.com/photos/random"
         params = {
             "query": query_string,
             "orientation": "landscape",
-            "per_page": 1,
             "client_id": UNSPLASH_ACCESS_KEY,
         }
         try:
             response = requests.get(url, params=params, timeout=10)
             response.raise_for_status()
-            data = response.json()
-            if data.get("results"):
-                result = data["results"][0]
+            result = response.json()
+            if result and "urls" in result:
                 img_url = result["urls"]["regular"]
                 author_name = result["user"]["name"]
-                # Append required UTM tags per Unsplash API guidelines
                 author_link = f"{result['user']['links']['html']}?utm_source=CodeFlamingo&utm_medium=referral"
                 return img_url, author_name, author_link
         except Exception as e:
