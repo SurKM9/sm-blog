@@ -18,7 +18,7 @@ def run_diagnostic():
         print("2. Sending prompt... (This may take 10-30 seconds if it's the first run)")
         
         # Simple probe
-        response = llm.invoke("Say the word 'Flaming'")
+        response = llm.invoke("Say the word 'Flamingo'")
         
         end_time = time.time()
         print(f"3. ✅ Success! (Time taken: {end_time - start_time:.2f}s)")
